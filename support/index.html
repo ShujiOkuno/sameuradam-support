@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート | 早明浦ダム貯水率</title>
+<style>
+  :root {
+    --blue: #2E89E8;
+    --blue-dark: #1654A8;
+    --ink: #1c1c1e;
+    --sub: #6e6e73;
+    --bg: #f5f5f7;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+  .hero {
+    background: linear-gradient(160deg, var(--blue), var(--blue-dark));
+    color: white;
+    padding: 56px 24px 40px;
+    text-align: center;
+  }
+  .hero h1 { margin: 0 0 6px; font-size: 26px; font-weight: 800; }
+  .hero p { margin: 0; opacity: 0.9; font-size: 15px; }
+
+  .wrap { max-width: 640px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  .card {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 24px 26px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .card h2 {
+    font-size: 15px; font-weight: 700; color: var(--sub);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    margin: 0 0 16px;
+  }
+
+  .faq-item { border-bottom: 1px solid #eee; padding: 16px 0; }
+  .faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .faq-item:first-child { padding-top: 0; }
+  .faq-q {
+    font-weight: 700; font-size: 16px; margin: 0 0 6px;
+    display: flex; gap: 8px;
+  }
+  .faq-q::before { content: "Q"; color: var(--blue); flex-shrink: 0; }
+  .faq-a { margin: 0; font-size: 15px; color: #3a3a3c; padding-left: 20px; }
+
+  .contact-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--blue); color: white; text-decoration: none;
+    font-weight: 700; font-size: 16px;
+    padding: 14px 24px; border-radius: 14px;
+    margin-top: 4px;
+  }
+  .contact-sub { font-size: 13px; color: var(--sub); margin-top: 10px; }
+
+  .source-box {
+    background: #eef4fc; border-radius: 14px; padding: 16px 18px;
+    font-size: 14px; color: #3a3a3c;
+  }
+  .source-box a { color: var(--blue); }
+
+  footer {
+    text-align: center; font-size: 12px; color: #a1a1a6;
+    padding: 24px 20px 40px;
+  }
+  footer a { color: #a1a1a6; }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>早明浦ダム貯水率 サポート</h1>
+    <p>アプリのご利用でお困りの際は、こちらをご確認ください</p>
+  </div>
+
+  <div class="wrap">
+
+    <div class="card">
+      <h2>よくある質問</h2>
+
+      <div class="faq-item">
+        <p class="faq-q">貯水率が表示されない・更新されません</p>
+        <p class="faq-a">
+          データは独立行政法人 水資源機構の公開Webサイトから取得しています。
+          電波状況の悪い場所ではエラーが出ることがあります。画面を下にスワイプ
+          (プルリフレッシュ)すると再取得を試みます。改善しない場合は、水資源機構の
+          サイト側の構成変更により解析に失敗している可能性があります。時間をおいて
+          再度お試しください。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">通知が届きません</p>
+        <p class="faq-a">
+          設定画面の「貯水率が下がったら通知」がオンになっているか、また
+          iPhone本体の「設定 → 通知」でこのアプリの通知が許可されているかご確認ください。
+          通知は貯水率が閾値を下回った際に送られ、同じレベルの間は再通知されません。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">ホーム画面・ロック画面にウィジェットを追加するには?</p>
+        <p class="faq-a">
+          ホーム画面: 何もないところを長押し →左上の「+」→「早明浦ダム」を検索して追加。<br>
+          ロック画面: ロック画面を長押し →「カスタマイズ」→ウィジェット追加エリアをタップして選択。
+          Small・Medium(ホーム画面)、円形・長方形・インライン(ロック画面)の各表示に対応しています。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">ウィジェットの数値が古いままです</p>
+        <p class="faq-a">
+          iOSの判断によりバックグラウンド更新の頻度が制限される場合があります。
+          アプリ本体を一度開くと最新の値に更新されます。更新間隔は設定画面から
+          1〜24時間の範囲で変更できます。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">このアプリは水資源機構の公式アプリですか?</p>
+        <p class="faq-a">
+          いいえ、非公式のアプリです。独立行政法人 水資源機構が作成・公認したものでは
+          ありません。正確な情報は必ず公式サイトをご確認ください。
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">個人情報は収集されますか?</p>
+        <p class="faq-a">
+          収集しません。広告やトラッキングもなく、設定値やダムの履歴データは
+          お使いの端末内にのみ保存されます。
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>データの出典</h2>
+      <div class="source-box">
+        貯水率データは
+        <a href="https://www.water.go.jp/yoshino/yoshino/realtime/index.html" target="_blank" rel="noopener">
+          独立行政法人 水資源機構 吉野川本部
+        </a>
+        の公開Webサイトから取得し、本アプリで整形・加工して表示しています。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p style="margin-top:0;">
+        上記で解決しない不具合のご報告やご要望は、以下のメールアドレスまでご連絡ください。
+      </p>
+      <a class="contact-btn" href="mailto:cyx01245@gmail.com?subject=早明浦ダム貯水率アプリについて">
+        ✉️ cyx01245@gmail.com
+      </a>
+      <p class="contact-sub">お使いの機種・iOSバージョン・アプリのバージョンを添えていただけるとスムーズです。</p>
+    </div>
+
+  </div>
+
+  <footer>
+    早明浦ダム貯水率アプリ &middot; Version 1.0<br>
+    本アプリは独立行政法人 水資源機構が作成・公認したものではありません。
+  </footer>
+
+</body>
+</html>

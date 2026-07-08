@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | 早明浦ダム貯水率</title>
+<style>
+  :root {
+    --blue: #2E89E8;
+    --blue-dark: #1654A8;
+    --ink: #1c1c1e;
+    --sub: #6e6e73;
+    --bg: #f5f5f7;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+  .hero {
+    background: linear-gradient(160deg, var(--blue), var(--blue-dark));
+    color: white;
+    padding: 56px 24px 40px;
+    text-align: center;
+  }
+  .hero h1 { margin: 0 0 6px; font-size: 26px; font-weight: 800; }
+  .hero p { margin: 0; opacity: 0.9; font-size: 15px; }
+
+  .wrap { max-width: 640px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  .card {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 24px 26px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  }
+  .card h2 {
+    font-size: 15px; font-weight: 700; color: var(--sub);
+    text-transform: uppercase; letter-spacing: 0.06em;
+    margin: 0 0 16px;
+  }
+  .card p { margin: 0 0 12px; font-size: 15px; color: #3a3a3c; }
+  .card p:last-child { margin-bottom: 0; }
+  .card ul { margin: 0 0 12px; padding-left: 20px; font-size: 15px; color: #3a3a3c; }
+  .card ul:last-child { margin-bottom: 0; }
+  .card li { margin-bottom: 4px; }
+
+  .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #eef4fc; color: var(--blue-dark);
+    font-size: 13px; font-weight: 700;
+    padding: 8px 14px; border-radius: 20px;
+  }
+  .badge::before { content: "✕"; color: #c0392b; font-weight: 900; }
+
+  .contact-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--blue); color: white; text-decoration: none;
+    font-weight: 700; font-size: 16px;
+    padding: 14px 24px; border-radius: 14px;
+    margin-top: 4px;
+  }
+
+  .source-box {
+    background: #eef4fc; border-radius: 14px; padding: 16px 18px;
+    font-size: 14px; color: #3a3a3c;
+  }
+  .source-box a { color: var(--blue); }
+
+  footer {
+    text-align: center; font-size: 12px; color: #a1a1a6;
+    padding: 24px 20px 40px;
+  }
+  footer a { color: #a1a1a6; }
+</style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>プライバシーポリシー</h1>
+    <p>早明浦ダム貯水率アプリ</p>
+  </div>
+
+  <div class="wrap">
+
+    <div class="card">
+      <h2>基本方針</h2>
+      <p>
+        本アプリ「早明浦ダム貯水率」は、利用者の個人情報を一切収集しません。
+        アカウント登録や会員情報の入力も不要です。
+      </p>
+      <div class="badge-row">
+        <span class="badge">個人情報の収集</span>
+        <span class="badge">第三者広告の表示</span>
+        <span class="badge">行動のトラッキング</span>
+        <span class="badge">利用状況解析(アナリティクス)</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>アプリ内で扱うデータ</h2>
+      <p>
+        アプリの利用に伴い、以下のデータをお使いの端末内(App
+        Groupのローカルストレージ)にのみ保存します。外部のサーバーへ送信されることはありません。
+      </p>
+      <ul>
+        <li>貯水率・平年値の履歴(過去30日の推移グラフ表示用)</li>
+        <li>通知のしきい値・更新間隔などの設定値</li>
+        <li>最終取得成功日時</li>
+      </ul>
+      <p>
+        これらのデータはアプリをアンインストールすると同時に端末から削除されます。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>通信について</h2>
+      <p>
+        本アプリは、貯水率データを取得するために
+        <a href="https://www.water.go.jp/yoshino/yoshino/realtime/index.html" target="_blank" rel="noopener">
+          独立行政法人 水資源機構 吉野川本部
+        </a>
+        の公開Webサイトへ通信を行います。この通信に、利用者を特定する情報(氏名・連絡先・端末識別子など)は一切含まれません。
+      </p>
+      <p>
+        これ以外の外部サーバーとの通信は行っておらず、広告SDKや解析SDKなどの第三者ライブラリも組み込んでいません。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>通知(プッシュ通知ではありません)</h2>
+      <p>
+        貯水率が設定したしきい値を下回った際にお知らせする機能は、端末内で処理される「ローカル通知」です。
+        サーバーを経由したプッシュ通知ではないため、通知のためにいかなる情報も外部へ送信されません。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>第三者への提供</h2>
+      <p>
+        本アプリは広告表示、利用状況解析、その他いかなる目的であっても、利用者の情報を第三者へ提供・共有することはありません。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>お子様のご利用について</h2>
+      <p>
+        本アプリは年齢制限なし(4+)でご利用いただけます。年齢を問わず、個人情報の入力や収集は行っていません。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>本ポリシーの変更</h2>
+      <p>
+        法令の改正やアプリの機能追加に伴い、本ポリシーの内容を予告なく変更する場合があります。変更後の内容は本ページに掲載した時点で効力を生じるものとします。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p>本ポリシーに関するご質問は、以下のメールアドレスまでご連絡ください。</p>
+      <a class="contact-btn" href="mailto:cyx01245@gmail.com?subject=早明浦ダム貯水率アプリ プライバシーポリシーについて">
+        ✉️ cyx01245@gmail.com
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    早明浦ダム貯水率アプリ &middot; Version 1.0<br>
+    制定日: 2026年7月8日<br>
+    本アプリは独立行政法人 水資源機構が作成・公認したものではありません。
+  </footer>
+
+</body>
+</html>
